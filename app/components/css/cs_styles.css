@@ -1,0 +1,220 @@
+body {
+    background: #aaa;
+}
+div#sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    background: #555;
+    border: solid 2px transparent;
+    padding: 20px 0 20px 0;
+}
+
+div#sidebar-logout {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 5px 0 5px 0;
+    margin-bottom: 30px;
+    background: #444;
+    border-top: solid 2px rgba(0,0,0,.5);
+    border-bottom: solid 2px rgba(0,0,0,.5);
+}
+
+div#sidebar-logout:hover{
+    background: rgba(0,0,0,.5);
+}
+
+div#sidebar-logout:hover a div div, div#sidebar-logout:hover a div span {
+    color: #fff;
+}
+
+div.user_active div.user_online div.user_info div, div.user_active div.user_online div.user_info a, div.user_active div.user_online div.user_info p {
+    font-size: .8em;
+}
+div.sidebar-btn {
+    margin: 0 auto;
+
+}
+
+.sidebar-btn-txt{
+    float: right;
+    margin: 5px 5px 5px 5px
+}
+
+div.navbar {
+    margin-bottom: 0;
+}
+
+nav.navbar.navbar-fixed-top.navbar-inverse {
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+ul#login-dp.dropdown-menu {
+    padding: 10px 10px 10px 10px;
+    min-width: 200px;
+}
+
+[id*="dashboard-panels-"] {
+    margin-top: 20px;
+}
+
+div.user-container {
+    display: block;
+    border: inset 1px rgba(0,0,0,.7);
+    box-shadow: 0 0 2px 0 #0c0c0c;
+    float: left;
+    margin: 2px 2px 2px 2px;
+    padding: 0;
+    /*content: " ";*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+div.user-online {
+    display: block;
+    background: #eee;
+    word-wrap: break-word;
+    height: 120px;
+    width: 75px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 3px 3px 3px 3px;
+}
+
+div.user-info a, div.user-info p, div.user-info div {
+    word-wrap: break-word;
+}
+
+div.user-info a {
+    border: solid 1px #111;
+    box-shadow: 0 0 1px 0 #222;
+    padding: 3px;
+    background: blue;
+    color: #fff;
+    font-size: .7em;
+    text-align: center;
+    display: block;
+    width: 100%;
+
+}
+
+div.user-info p {
+    font-size: .7em;
+    text-align: center;
+    margin: 0;
+    padding: 3px 3px 3px 3px;
+}
+
+div.user-info p.online {
+    color: green;
+    transition: all ease 2s;
+}
+
+div.user-info p.offline {
+    color: red;
+    transition: all ease 2s;
+}
+
+.route-link {
+    cursor: pointer;
+}
+
+#main-content {
+    position: relative;
+    top: 50px;
+    padding: 10px 10px 10px 15px;
+}
+
+#dashboard-menu-actions {
+    margin-top: 50px;
+}
+
+.panel-request {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+#dashboard-panels-users{
+    padding: 5px 5px 5px 5px;
+    float: left;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    background: rebeccapurple;
+    color: #111;
+
+    -webkit-transition: width 2s ease, height 2s ease;
+    -moz-transition: width 2s ease, height 2s ease;
+    -o-transition: width 2s ease, height 2s ease;
+    transition: width 2s ease, height 2s ease;
+}
+
+.user-hover-active {
+    z-index: 10;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+#user-group-wrapper.content-hide, #user-group-wrapper-base.content-hide {
+    opacity: 0.0;
+    display: none;
+}
+
+#user-group-wrapper {
+    height: 200px;
+    min-width: 300px;
+    border: solid thin blue;
+    border-radius: 10px;
+    background: #fff;
+
+    opacity: 1.0;
+    -webkit-transition: opacity 2s ease-in-out, height 2s ease;
+    -moz-transition: opacity 2s ease-in-out, height 2s ease;
+    -o-transition: opacity 2s ease-in-out, height 2s ease;
+    transition: opacity 2s ease-in-out, height 2s ease;
+}
+
+#user-group-wrapper-base{
+    opacity: 1.0;
+    -webkit-transition: opacity 2s ease-in-out, height 2s ease;
+    -moz-transition: opacity 2s ease-in-out, height 2s ease;
+    -o-transition: opacity 2s ease-in-out, height 2s ease;
+    transition: opacity 2s ease-in-out, height 2s ease;
+}
+
+[class*="col-"].panel-utility{
+    padding: 0;
+    /*-webkit-box-shadow: inset 1px 1px 2px black;*/
+    /*-moz-box-shadow: inset 1px 1px 2px black;*/
+    /*box-shadow: inset 1px 1px 2px black;*/
+}
+
+#actionButton{
+    width: 100%;
+    height: 150px;
+    padding: 0px;
+}
+
+
+#actionContainer {
+        width: 100%;
+        padding: 10px 30px 10px 30px;
+    }
+
+#infoContainer {
+    width: 100%;
+    padding: 20px 15px 20px 15px;
+
+}
+
+#infoPanel{
+    height: 250px;
+
+}
