@@ -1,8 +1,8 @@
 <?php
 
-require_once('__INC_INIT__.php');
+    require_once('__INC_INIT__.php');
 
-$auth->signout();
+    $auth->signout();
 
 
-header('Location: ../../../');
+    header('Location: ../../../');

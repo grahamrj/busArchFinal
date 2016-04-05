@@ -1,6 +1,7 @@
 <div class="row">
     <div class="container" id="actionContainer">
-        <button type="button" id="actionButton" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-1">
+        <button type="button" id="actionButton" class="btn btn-primary btn-lg" data-toggle="modal"
+                data-target="#modal-1">
             <span style="font-size:xx-large;">Request Recognition</span></button>
         <div class="modal fade" id="modal-1">
             <div class="modal-dialog modal-lg">
@@ -8,106 +9,79 @@
                     <div class="modal-header">
                         <button type="button" class="close" type="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">Title if we want one</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div id="dashboard-panels-menu" class="col-md-12 col-xs-12">
-                            <div class="col-lg-3 col-md-6 col-sm-3 panel-utility">
-                                <div class="panel panel-primary">
-                                    <div class="panel-heading">
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <i class="fa fa-comments fa-5x"></i>
-                                            </div>
-                                            <div class="col-xs-9 text-right">
-                                                <div class="huge">26</div>
-                                                <div>New Comments!</div>
+                        <div class="modal-body">
+                            <div id="dashboard-panels-menu" class="col-md-12 col-xs-12">
+                                <div class="col-lg-3 col-md-6 col-sm-3 panel-utility">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <i class="fa fa-comments fa-5x"></i>
+                                                </div>
+                                                <div class="col-xs-9 text-right">
+                                                    <div class="huge">26</div>
+                                                    <div>New Comments!</div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <a href="#">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">View Details</span>
+                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="#">
-                                        <div class="panel-footer">
-                                            <span class="pull-left">View Details</span>
-                                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </a>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-3 panel-utility">
-                                <div class="panel panel-green">
-                                    <div class="panel-heading">
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <i class="fa fa-tasks fa-5x"></i>
-                                            </div>
-                                            <div class="col-xs-9 text-right">
-                                                <div class="huge">12</div>
-                                                <div>New Tasks!</div>
+                                <div class="col-lg-3 col-md-6 col-sm-3 panel-utility">
+                                    <div class="panel panel-yellow">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                                </div>
+                                                <div class="col-xs-9 text-right">
+                                                    <div class="huge">124</div>
+                                                    <div>New Orders!</div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <a href="#">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">View Details</span>
+                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="#">
-                                        <div class="panel-footer">
-                                            <span class="pull-left">View Details</span>
-                                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </a>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-3 panel-utility">
-                                <div class="panel panel-yellow">
-                                    <div class="panel-heading">
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <i class="fa fa-shopping-cart fa-5x"></i>
-                                            </div>
-                                            <div class="col-xs-9 text-right">
-                                                <div class="huge">124</div>
-                                                <div>New Orders!</div>
+                                <div class="col-lg-3 col-md-6 col-sm-3 panel-utility">
+                                    <div class="panel panel-red">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <i class="fa fa-support fa-5x"></i>
+                                                </div>
+                                                <div class="col-xs-9 text-right">
+                                                    <div class="huge">13</div>
+                                                    <div>Support Tickets!</div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <a href="#">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">View Details</span>
+                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="#">
-                                        <div class="panel-footer">
-                                            <span class="pull-left">View Details</span>
-                                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-3 panel-utility">
-                                <div class="panel panel-red">
-                                    <div class="panel-heading">
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <i class="fa fa-support fa-5x"></i>
-                                            </div>
-                                            <div class="col-xs-9 text-right">
-                                                <div class="huge">13</div>
-                                                <div>Support Tickets!</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#">
-                                        <div class="panel-footer">
-                                            <span class="pull-left">View Details</span>
-                                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="modal-footer">
-                        <a href="" class="btn btn-default" data-dismiss="modal">Close</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>

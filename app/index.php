@@ -25,10 +25,10 @@
 </head>
 
 <body>
-<!--
+<!-- DEV COMMENT
      ...once upon a time, there was a very lazy web app template. This template was only kind-of a template...
      it did its job just fine and was accepted by more people than one would expect...despite the
-     fact that it was hack-ee as fuck.
+     fact that it was hack-ee as .... .
 
        The end.
   -->
@@ -38,13 +38,19 @@
 
     <!--  Dashboard Construction... Its coming along  -->
     <div id="main-content" class="col-md-10 col-xs-10 col-md-offset-2 col-xs-offset-2" data-content-level="0">
-        <?php include_once(COMP_DIR . 'main_content.php'); ?>
+        <?php include_once(COMP_DIR . 'pages' . $ds . 'main_content.php'); ?>
         <div class="clearfix"></div>
     </div>
 </div>
+
     <!--
       --  Include Scripts
       -->
     <?php /** @noinspection PhpIncludeInspection */ include(COMP_DIR . 'foot.php'); ?>
+    <script>
+        $(function () {
+
+        });
+    </script>
 </body>
 </html>

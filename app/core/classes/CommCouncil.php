@@ -8,16 +8,29 @@
      */
     class CommCouncil
     {
-        protected $db;
+        protected $database;
 
-        public function __construct(Database $db)
+        protected $table = 'citycouncil';
+
+        // private $tables_allowed = ['citycouncil','mainmotion',];
+
+        public function __construct(Database $database)
         {
-            $this->db = $db;
+            $this->database = $database;
         }
 
-
-        public function getCouncilMembers()
+        public function getCouncilID($City)
         {
-
+            $temp = $this->database->table($this->table)->like('City',$City);
+            if($temp->count()){
+                $temp = $temp->first();
+                return json_encode(['city_id' => $temp->CouncilID]);
+            }
+            return false;
         }
+
+//        public function getCouncilMembers()
+//        {
+//            $this
+//        }
     }
