@@ -46,7 +46,7 @@
         <!--<li class="list-group-item"><a class="route-link" data-route-level="1" data-route="Test.php">Test</a></li>-->
         <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="About.php">About</a></li>
         <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="Services.php">Services</a></li>
-        <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="Packages.php">Packages</a></li>
+        <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="packages.php">Packages</a></li>
         <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="FAQ.php">FAQ</a></li>
     </ul>
 
