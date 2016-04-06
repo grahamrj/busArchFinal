@@ -144,12 +144,14 @@ $(function () {
                         $user_active.empty();
                         $.each(data, function (i, v) {
                             var is_on = (data[i].IsActive === "1") ? "online" : "offline";
-                            var content = '<div class="user-container">'
-                                + '<div class="user-online">'
-                                + '<div class="user-info">'
-                                + '<p>' + data[i].FName + ' ' + data[i].LName + '</p>'
+                            var content = '<div class="col-md-3">'
+                                + '<div class="thumbnail">'
+                                + '<img src="' + getPicture(data[i]) + '"/>'
+                                + '<div class="caption" style="text-align: center">'
+                                + '<h3>' + data[i].FName + ' ' + data[i].LName + '</h3>'
                                 + '<a href="#">' + data[i].UserName + '</a>'
                                 + '<p class=' + is_on + '>' + is_on + '</p>'
+                                + '<p><a href="#" class="btn btn-primary">Vote</a></p>'
                                 + '</div>'
                                 + '</div>'
                                 + '</div>';
@@ -174,6 +176,28 @@ $(function () {
         //}
     }
 
+    //Don't use this function as is. Instead grab from database
+    function getPicture(data)
+    {
+        $picture = "images/";
+        if(data.FName == "David")
+        {
+            $picture = $picture + "david.png";
+        }
+        else if (data.FName == "Eric")
+        {
+            $picture = $picture + "eric.png";
+        }
+        else if (data.FName == "Graham")
+        {
+            $picture = $picture + "graham.png";
+        }
+        else
+        {
+            $picture = $picture + "defaultPic.png";
+        }
+        return $picture;
+    }
 
 // **********************************************    EVENTS    *********************************************************
 

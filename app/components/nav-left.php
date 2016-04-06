@@ -9,7 +9,31 @@
         <div class="row">
             <div class="col-sm-12">
                 <div
-                    style="height: 100px; width: 100px; margin: 0 auto; border: solid thin white; background: #eee; border-radius: 100%;"></div>
+                    style="height: 100px; width: 100px; margin: 0 auto; background: #eee; border-radius: 100%;">
+
+                    <?php
+                    $name = ucfirst($auth->getUserInfo('FName'));
+
+                    echo '<img src="'.getPicture($name).'"/>';
+
+                    function getPicture($name)
+                    {
+                        if ($name == "David") {
+                            $picture = "images/david100.png";
+                        }
+                        else if ($name == "Eric") {
+                            $picture = "images/eric100.png";
+                        }
+                        else if ($name == "Graham") {
+                            $picture = "images/graham100.png";
+                        }
+                        else {
+                            $picture = "images/defaultPic100.png";
+                        }
+                        return $picture;
+                    }
+                    ?>
+                </div>
                 <p style="text-align: center; padding: 5px 5px 5px 5px; color: #fff;"><?php echo ucfirst($auth->getUserInfo('FName')) . ' ' . ucfirst($auth->getUserInfo('LName')); ?></p>
             </div>
         </div>
@@ -18,8 +42,8 @@
     <ul class="list-group">
         <li class="list-group-item"><a class="route-link" data-route-level="0" data-route="main_content.php">Main</a>
         </li>
-        <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="/">Sign Up</a></li>
-        <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="Test.php">Test</a></li>
+        <!--<li class="list-group-item"><a class="route-link" data-route-level="1" data-route="/">Sign Up</a></li>-->
+        <!--<li class="list-group-item"><a class="route-link" data-route-level="1" data-route="Test.php">Test</a></li>-->
         <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="About.php">About</a></li>
         <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="Services.php">Services</a></li>
         <li class="list-group-item"><a class="route-link" data-route-level="1" data-route="Packages.php">Packages</a></li>
